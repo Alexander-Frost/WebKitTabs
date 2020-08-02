@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA66652924D75E83004699CC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66652824D75E83004699CC /* ContainerView.swift */; };
+		FA66652B24D75E9F004699CC /* SwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66652A24D75E9F004699CC /* SwitcherView.swift */; };
 		FA9EB1CB24D75DA400CF2F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EB1CA24D75DA400CF2F07 /* AppDelegate.swift */; };
 		FA9EB1CD24D75DA400CF2F07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EB1CC24D75DA400CF2F07 /* SceneDelegate.swift */; };
 		FA9EB1CF24D75DA400CF2F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EB1CE24D75DA400CF2F07 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA66652824D75E83004699CC /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		FA66652A24D75E9F004699CC /* SwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherView.swift; sourceTree = "<group>"; };
 		FA9EB1C724D75DA400CF2F07 /* WebKitTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebKitTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9EB1CA24D75DA400CF2F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9EB1CC24D75DA400CF2F07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				FA9EB1CA24D75DA400CF2F07 /* AppDelegate.swift */,
 				FA9EB1CC24D75DA400CF2F07 /* SceneDelegate.swift */,
+				FA66652824D75E83004699CC /* ContainerView.swift */,
 				FA9EB1CE24D75DA400CF2F07 /* ViewController.swift */,
+				FA66652A24D75E9F004699CC /* SwitcherView.swift */,
 				FA9EB1D024D75DA400CF2F07 /* Main.storyboard */,
 				FA9EB1D324D75DA700CF2F07 /* Assets.xcassets */,
 				FA9EB1D524D75DA700CF2F07 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA66652924D75E83004699CC /* ContainerView.swift in Sources */,
 				FA9EB1CF24D75DA400CF2F07 /* ViewController.swift in Sources */,
+				FA66652B24D75E9F004699CC /* SwitcherView.swift in Sources */,
 				FA9EB1CB24D75DA400CF2F07 /* AppDelegate.swift in Sources */,
 				FA9EB1CD24D75DA400CF2F07 /* SceneDelegate.swift in Sources */,
 			);

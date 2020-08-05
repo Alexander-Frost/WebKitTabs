@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @objc func newTabBtnPressed(sender: UIButton){
         print("New tab button pressed")
         
+        //tabView.addContainerView(ContainerView(frame: tabView.bounds, parentView: tabView, imageName: "image3.jpg"))
         tabView.addContainerView(ContainerView(frame: tabView.bounds, parentView: tabView, urlString: "https://www.google.com/search?q=alex+rulez"))
     }
     
@@ -36,6 +37,13 @@ class ViewController: UIViewController {
         // Add tab view
         view.addSubview(tabView)
 
+        // Remove Tab View
+//        for view in self.view.subviews {
+//            if view.isKind(of: SwitcherView.self) {
+//                view.removeFromSuperview()
+//            }
+//        }
+        
         // New Tab Button
         let frame = CGRect(x: 200, y: UIScreen.main.bounds.height - 100, width: 100, height: 100)
         let newTabBtn = UIButton(frame: frame)

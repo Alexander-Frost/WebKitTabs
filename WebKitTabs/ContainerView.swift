@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class ContainerView: UIView, UIGestureRecognizerDelegate { // Contains the webview for each tab
 
@@ -27,11 +28,11 @@ class ContainerView: UIView, UIGestureRecognizerDelegate { // Contains the webvi
     // Convenience initializer that sets up a web view.
     convenience init(frame: CGRect, parentView: SwitcherView, urlString: String) {
         self.init(frame: frame, parentView: parentView)
-        let webSubview = UIWebView(frame: bounds)
+        let webSubview = WKWebView(frame: bounds)
         webSubview.isUserInteractionEnabled = SwitcherView.enableUserInteractionInSwitcher
         addSubview(webSubview)
         if let url = URL(string: urlString) {
-            webSubview.loadRequest(URLRequest(url: url))
+            webSubview.load(URLRequest(url: url))
         } else {
             fatalError("<!> could not create url with string: `\(urlString)`")
         }

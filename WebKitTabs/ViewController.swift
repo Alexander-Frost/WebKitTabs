@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @objc func newTabBtnPressed(sender: UIButton){
         print("New tab button pressed")
         
-        tabView.addContainerView(ContainerView(frame: tabView.bounds, parentView: tabView, imageName: "image3.jpg"))
+        tabView.addContainerView(ContainerView(frame: tabView.bounds, parentView: tabView, urlString: "https://www.google.com/search?q=alex+rulez"))
     }
     
     // MARK: - VC Lifecycle
@@ -45,9 +45,6 @@ class ViewController: UIViewController {
         newTabBtn.addTarget(self, action: #selector(newTabBtnPressed(sender:)), for: .touchDown)
         newTabBtn.sizeToFit()
         view.addSubview(newTabBtn)
-        
     }
-
-
 }
 
